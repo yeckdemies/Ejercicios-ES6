@@ -40,5 +40,3 @@ const visitedCities = cities.map((city) => {
   }
   return city.name;
 });
-
-console.log(visitedCities);
