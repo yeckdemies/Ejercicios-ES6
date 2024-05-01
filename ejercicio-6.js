@@ -48,5 +48,3 @@ const newAlien = {
   ...alienCucushumushu,
   mutation: { ...mutationPorompompero }
 };
-
-console.log(newAlien);
