@@ -15,3 +15,21 @@ const mainCharacters = [
   'Anakin',
   'Obi-Wan'
 ];
+
+const cadenaUsuario1 = 'Han Solo';
+const cadenaUsuario2 = 'Han';
+const cadenaUsuario3 = 'Solo';
+const cadenaUsuario4 = 'Anakin';
+
+const findArrayIndex = (array, text) => {
+  const posicion = array.indexOf(text);
+  return posicion;
+};
+
+const resultado = findArrayIndex(mainCharacters, cadenaUsuario4); //cadenaUsuario1, cadenaUsuario2, cadenaUsuario3, cadenaUsuario4
+
+if (resultado != -1) {
+  console.log(`El elemento se encuentra en la posición ${resultado}`);
+} else {
+  console.log(`No se ha encontrado el elemento`);
+}
