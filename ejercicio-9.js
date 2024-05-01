@@ -27,3 +27,12 @@ const movies = [
     categories: ['comedia', 'aventura', 'animación']
   }
 ];
+
+const categories = new Set();
+
+for (const pelicula of movies) {
+  pelicula.categories.forEach((categoria) => {
+    categories.add(categoria);
+  });
+}
+console.log([...categories]);
