@@ -45,3 +45,26 @@ const users = [
     }
   }
 ];
+
+const sonidos = [];
+let contador = 0;
+
+for (const user of users) {
+  for (const sound in user.favoritesSounds) {
+    sonidos.push(sound);
+  }
+}
+
+const sonidosSinDuplicados = [...new Set(sonidos)];
+
+sonidosSinDuplicados.forEach((element) => {
+  contador = 0;
+  sonidos.forEach((sonido) => {
+    if (sonido === element) {
+      contador++;
+    }
+  });
+  console.log(
+    `El sonido ${element} ha sido añadido a favoritos ${contador} veces.`
+  );
+});
