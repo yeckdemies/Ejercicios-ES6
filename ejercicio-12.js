@@ -22,8 +22,7 @@ const cadenaUsuario3 = 'Solo';
 const cadenaUsuario4 = 'Anakin';
 
 const findArrayIndex = (array, text) => {
-  const posicion = array.indexOf(text);
-  return posicion;
+  return array.indexOf(text);
 };
 
 const resultado = findArrayIndex(mainCharacters, cadenaUsuario4); //cadenaUsuario1, cadenaUsuario2, cadenaUsuario3, cadenaUsuario4
