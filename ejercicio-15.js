@@ -10,3 +10,13 @@ const fantasticFour = [
   'La mujer invisible',
   'La cosa'
 ];
+
+const swap = (indice1, indice2) => {
+  [fantasticFour[indice1], fantasticFour[indice2]] = [
+    fantasticFour[indice2],
+    fantasticFour[indice1]
+  ];
+  return fantasticFour;
+};
+
+console.log(swap(0, 1));
